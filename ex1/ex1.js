@@ -31,15 +31,15 @@ function bikes() {
     media = soma / 2
     alert(`A média é ${media}`);
 
-    let antiga = vetor[0].ano
+    let antiga = vetor[0].ano // aqui ele pega o ano
     let antigas = [];
-    for (let i = 0; i < tam; i++) {
-        if (antiga > vetor[i].ano) {
-            antiga = vetor[i].ano
+    for (let i = 0; i < tam; i++) { 
+        if (antiga > vetor[i].ano) { // se o ano q ele pegou for menor q antiga 
+            antiga = vetor[i].ano   // ele vai subistituir 
             antigas = [];
-            antigas.push(vetor[i]);
+            antigas.push(vetor[i]); // e vai armazenar em um outro vetor
         }
-        else if (antiga == vetor[i].ano) {
+        else if (antiga == vetor[i].ano) { // se não ele mantém 
             antigas.push(vetor[i]);
         }
         
@@ -48,10 +48,10 @@ function bikes() {
     // alert(JSON.stringify(antigas));
     // console.log(antigas); 
 
-    let antigasHtml = antigas.map(el => {
-        return JSON.stringify(el);
+    let antigasHtml = antigas.map(el => { // map percorre o vetor e cria um novo vetor , o .map ele copia e modifica  
+        return JSON.stringify(el);  // transforma objeto em string 
     });
-    alert(`A| Bike mais antiga é: ` + antigasHtml.join('\n'));
+    alert(`A| Bike mais antiga é: ` + antigasHtml.join('\n')); // join concatena os elementos do vetor
 
     let somaMarca = [];
     for (let i = 0; i < tam; i++) {
