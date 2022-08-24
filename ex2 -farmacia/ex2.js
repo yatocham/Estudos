@@ -45,8 +45,8 @@ function ex2() {
         remedio.push(remedios);
     }
     let tudo = 5
-    for(let k = 0; k < tudo ; k ++){
-        quantidade_compra =  Number(prompt(`Quantos remédios você deseja comprar?`));
+    for (let k = 0; k < tudo; k++) {
+        quantidade_compra = Number(prompt(`Quantos remédios você deseja comprar?`));
 
         estoque = quantidade_compra - tudo
     }
