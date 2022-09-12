@@ -12,15 +12,38 @@ function exercicio1(numero) {
     for (let i = 1; i <= numero; i++) {
         soma = soma + i
     }
-    alert(`A soma é ${soma}`);
+    // alert(`A soma é ${soma}`)
+    return soma
+}
+
+function exercicio2(h, m, s) {
+    let converte = (h * 3600) + (m * 60) + s
+    return converte
+}
+
+function exercicio3(numero1, numero2) {
+    if (numero2 == 0 || numero2 > numero1) {
+        return 'error'
+    }
+    if (numero1 % numero2 == 0) {
+        return 0
+    } else {
+        for (let i = numero2; i < numero1; i++) {
+            if (numero1 % i == 0) {
+                return i
+            }
+        }
+    }
 }
 
 function exercicio5(numero) {
-    if (numero >= 0) {
-        alert(`O número ${numero} é positivo!`);
-    } else {
-        alert(`O número ${numero} é negativo!`);
-    }
+    // if (numero >= 0) {
+    //     alert(`O número ${numero} é positivo!`);
+    // } else {
+    //     alert(`O número ${numero} é negativo!`);
+    // }
+    let resposta = numero >= 0 ? 'positivo' : ('negativo'); // operador ternário
+    return resposta
 }
 
 function exercicio4(raio) {
