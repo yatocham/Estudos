@@ -39,11 +39,38 @@ function exercicio2() {
             }
             if (fabricacao[i][j] % 2 == 0) {
                 qtde++
-                par+= fabricacao[i][j]
+                par += fabricacao[i][j]
                 media = par / qtde
             }
         }
         alert(`A quantidade de elementos entre 12 e 20  na linha ${i} é ${cont}`);
     }
     alert(`A média dos elementos pares é ${media}`);
+}
+
+// Preencha a mtriz 3 X 5 
+// O maior elemento da matriz (da linha e da coluna)
+// O menor elemento da matriz (da linha e da coluna)
+
+
+function exercicio3() {
+    // entrada de dados
+    let fabricacao = []
+    let mat = []
+    menor = mat[0][0];
+    maior = mat[0][0];
+    for (let i = 0; i < 6; i++) {
+        fabricacao[i] = []
+        for (let j = 0; j < 3; j++) {
+            fabricacao[i][j] = Number(prompt(`Digite um número para a linha ${i+1} e coluna ${j+1}`))
+            if (menor > mat[i][j]) {
+                menor = mat[i][j];
+            }
+
+            if (maior < mat[i][j]) {
+                maior = mat[i][j];
+            }
+        }
+    }
+    alert(`O maior elemento é  ${maior} e o menor é ${menor}`);
 }
