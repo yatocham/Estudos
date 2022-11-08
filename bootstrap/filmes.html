@@ -19,9 +19,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="carros.html">Carros <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="filmes.html">Filmes</a>
+                <a class="nav-item nav-link" href="carros.html">Carros <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="filmes.html">Filmes</a>
                 <a class="nav-item nav-link" href="produtos.html">Produtos</a>
+                <a class="nav-item nav-link" href="cep.html">Consulta CEP</a>
                 <a class="nav-item nav-link" href="sobre.html">Sobre</a>
             </div>
         </div>
@@ -29,27 +30,29 @@
 </head>
 
 <body>
-    <h1>Cadastro de Filmes</h1>
-    <form>
-        <div class="form-row">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Nome">
+    <section class="col-lg-12">
+        <h1>Cadastro de Filmes</h1>
+        <form>
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nome">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Tipo">
+                </div>
+                <div class="col">
+                    <input type="time" class="form-control" placeholder="Duracao">
+                </div>
+                <div class="col">
+                    <input type="tel" class="form-control" placeholder="atores">
+                </div>
+                <div class="col">
+                    <input type="tel" class="form-control" placeholder="ano">
+                </div>
             </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Tipo">
+            <div class="pt-3">
+                <a href="index.html" class="btn btn-primary">Salvar</a>
             </div>
-            <div class="col">
-                <input type="time" class="form-control" placeholder="Duracao">
-            </div>
-            <div class="col">
-                <input type="tel" class="form-control" placeholder="atores">
-            </div>
-            <div class="col">
-                <input type="tel" class="form-control" placeholder="ano">
-            </div>
-        </div>
-        <div class="pt-3">
-            <a href="index.html" class="btn btn-primary">Salvar</a>
-        </div>
-    </form>
+        </form>
+    </section>
 </body>
