@@ -31,46 +31,49 @@
 
 <body>
     <section class="col-lg-12">
-        <h1>Cadastro de Carros</h1>
-        <form method="get" action="." class="needs-validation" novalidate>
-            <div class="form-row">
-                <div class="col-md-4 mb-3">
-                    <input type="text" class="form-control" id="nome" placeholder="Nome" required>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome" required>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
+        <div class="card">
+
+            <h1>Cadastro</h1>
+            <form method="get" action="." class="needs-validation" novalidate>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" id="nome" placeholder="Nome" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="col-md-6 mb-3">
-                    <input type="text" class="form-control" id="cidade" placeholder="Cidade" required>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" id="cidade" placeholder="Cidade" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" id="bairro" placeholder="Bairro" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" id="uf" placeholder="Estado" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input type="tel" class="form-control" id="cep" placeholder="CEP" required>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Concordo com os termos e condições
+                        </label>
+                    </div>
                 </div>
-                <div class="col-md-6 mb-3">
-                    <input type="text" class="form-control" id="bairro" placeholder="Bairro" required>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <input type="text" class="form-control" id="uf" placeholder="Estado" required>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <input type="tel" class="form-control" id="cep" placeholder="CEP" required>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                        Concordo com os termos e condições
-                    </label>
-                </div>
-            </div>
-            <button type="button" id="buscar_cep" class="btn btn-primary">
-                buscar
-            </button>
-        </form>
+                <button type="button" id="buscar_cep" class="btn btn-primary">
+                    buscar
+                </button>
+            </form>
+        </div>
     </section>
 </body>
 
@@ -79,9 +82,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
 <script>
 
-$(document).ready(function(){
-	$("#cep").mask("99999-999");
-  });
+    $(document).ready(function () {
+        $("#cep").mask("99999-999");
+    });
 
     $('#buscar_cep').click(function () {
         // console.log('entrei');
