@@ -1,3 +1,6 @@
+# Trabalho em Python Professora Jaqueline
+# Alunos: Beatriz Custódio Soares 24318 Eder Junior Alves Silva 24323
+
 valorPrestacao = int(input('Qual o valor da prestacao ? '))
 contador = 0
 
